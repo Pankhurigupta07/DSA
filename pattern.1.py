@@ -68,6 +68,9 @@
 # pattern6(n)
   
 
+
+
+
 # def pattern7(n):
 #     for i in range(n):
 #         for j in range(n-i-1):
@@ -78,7 +81,85 @@
 #             print(" ",end="")
 
 #         print()
-
 # n=int(input())
 # pattern7(n)
 
+
+
+
+# def pattern8(n):
+#     for i in range(n):
+#         for j in range(i):
+#             print(" ",end="")
+#         for k in range(2*n-2*i-1):
+#             print("*", end="")
+#         for l in range(i):
+#             print(" ",end="")
+
+#         print()
+
+# n=int(input())
+# pattern8(n)
+
+
+
+# def pattern91(n):
+#     for i in range(n):
+#         for j in range(n-i-1):
+#             print(" ",end="")
+#         for k in range(2*i+1):
+#             print("*", end="")
+#         for l in range(n-i-1):
+#             print(" ",end="")
+
+#         print()
+
+
+
+# def pattern92(n):
+#     for i in range(n):
+#         for j in range(i):
+#             print(" ",end="")
+#         for k in range(2*n-2*i-1):
+#             print("*", end="")
+#         for l in range(i):
+#             print(" ",end="")
+
+#         print()
+
+# n=int(input())
+# pattern91(n)
+# pattern92(n)
+
+
+# def pattern10(n):
+#     for i in range(n):
+#         for j in range(i+1):
+#             print("*", end="")
+
+#         print()
+#     for k in range(n-1):
+#         for l in range(n-k-1):
+#             print("*", end="")
+
+#         print()
+
+
+# n= int(input())
+# pattern10(n)
+
+
+# def pattern11(n):
+#     for i in range(n):
+#         start=1
+#         if(i%2==0):
+#             start=1
+#         else:
+#             start=0
+#         for j in range (i+1):
+#             print(start,end="")
+#             start=1-start
+#         print()
+
+# n=int(input())
+# pattern11(n)
