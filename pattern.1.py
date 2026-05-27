@@ -163,3 +163,76 @@
 
 # n=int(input())
 # pattern11(n)
+
+
+
+
+# def pattern12(n):
+#     spaces=2*(n-1)
+#     for i in range(n):
+#         for j in range(i+1):
+#             print(j+1, end="")
+
+#         for k in range (spaces):
+#             print(" ",end="")
+
+        
+#         for l in range(i+1, 0,-1):
+#             print(l, end="")
+#         print()
+#         spaces=spaces-2
+
+# n= int(input())
+# pattern12(n)
+
+
+
+# def pattern13(n):
+#     num=1
+#     for i in range (n):
+#         for j in range(i+1):
+#             print(num, end=" ")
+#             num=num+1
+
+#         print()
+# n=int(input())
+# pattern13(n)
+
+
+# def pattern14(n):
+#     letter=65
+#     for i in range (n):
+#         for j in range(letter,letter+i+1):
+#             print(chr(j),end="")
+            
+#         print()
+        
+# n=int(input())
+# pattern14(n)
+
+# def pattern15(n):
+#     letter=65
+#     for i in range (n):
+#         for j in range(letter,letter+n):
+#             print(chr(j),end="")
+            
+#         print()
+#         n=n-1
+# n=int(input())
+# pattern15(n)
+
+
+
+# def pattern16(n):
+#     letter=65
+#     for i in range (n):
+#         for j in range(i+1):
+#             print(chr(letter),end="")
+            
+#         print()
+#         letter=letter+1
+# n=int(input())
+# pattern16(n)
+
+
+
