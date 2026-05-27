@@ -299,6 +299,92 @@
 # pattern19_1(n)
 # pattern19_2(n)
 
+#pattern 20
+# def pattern20_1(n):
+#     for i in range(n):
+#         # stars
+#         for j in range(i+1):
+#             print("*",end="")
+
+#         # spaces
+#         spaces=2*(n-1)-2*i
+#         for k in range (spaces):
+#             print(" ",end="")
+
+#         # stars
+#         for l in range(i+1):
+#             print("*",end="")
+
+#         print()
+
+# def pattern20_2(n):
+#     for i in range(n-1):
+#         # stars
+#         for j in range(n-i-1):
+#             print("*",end="")
+
+#         # spaces
+#         space=2*i+2
+#         for k in range(space):
+#             print(" ",end="")
+
+#         # stars
+#         for l in range(n-i-1):
+#             print("*",end="")
+
+#         print()
+
+# n= int(input())
+# pattern20_1(n)
+# pattern20_2(n)
 
 
 
+
+#pattern21
+
+# def pattern21(n):
+#     for i in range(n):
+#         for j in range(n):
+#             if(i==0 or i==n-1 or j==0 or j==n-1):
+#                 print("*", end="")
+#             else:
+#                 print(" ",end="")
+#         print()
+            
+# n=int(input())
+# pattern21(n)
+
+
+
+# def pattern22(n):
+#     for i in range(n):
+#         for j in range(n):
+#             if(i==0 or i==n-1 or j==0 or j==n-1):
+#                 print(n-3,end="")
+#             elif(i==1 or i==n-2 or j==1 or j==n-2):
+#                 print(n-4,end="")
+#             elif(i==2 or i==n-3 or j==2 or j==n-3):
+#                 print(n-5,end="")
+#             else:
+#                 print(n-6,end="")
+#         print()
+        
+# n=int(input())
+# pattern22(n)
+
+
+
+
+# def pattern22(n):
+#     for i in range(2*n-1):
+#         for j in range(2*n-1):
+#             top=i
+#             left=j
+#             right=(2*n-2)-j
+#             bottom=(2*n-2)-i
+#             print(n-min(min(top,bottom),min(left,right)),end="")
+#         print()
+
+# n=int(input())
+# pattern22(n)
