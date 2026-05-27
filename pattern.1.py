@@ -235,4 +235,70 @@
 # pattern16(n)
 
 
+# def pattern17(n):
+#     letter=65
+#     for i in range(n):
+#         for j in range(n-i-1):
+#             print(" ",end="")
+#         for k in range(letter,letter+i+1,1):
+#             print(chr(k),end="")
+#         for p in range(letter+i-1,letter-1,-1):
+#             print(chr(p),end="")
+#         for l in  range(n-i-1):
+#             print(" ",end="")
+
+#         print()
+# n=int(input())
+# pattern17(n)   
+
+# def pattern18(n):
+#     letter=69
+#     for i in range(n):
+#         for j in range(letter-i,letter+1):
+#             print(chr(j),end="")
+#         print()
+# n=int(input())
+# pattern18(n)
+
+#pattern19
+# def pattern19_1(n):
+#     for i in range(n):
+#         # stars
+#         for j in range(n-i):
+#             print("*",end="")
+
+#         # spaces
+#         space=2*i
+#         for k in range(space):
+#             print(" ",end="")
+
+#         # stars
+#         for l in range(n-i):
+#             print("*",end="")
+
+#         print()
+
+# def pattern19_2(n):
+#     for i in range(n):
+#         # stars
+#         for j in range(i+1):
+#             print("*",end="")
+
+#         # spaces
+#         spaces=2*(n-1)-2*i
+#         for k in range (spaces):
+#             print(" ",end="")
+
+#         # stars
+#         for l in range(i+1):
+#             print("*",end="")
+
+#         print()
+
+# n=int(input())
+# pattern19_1(n)
+# pattern19_2(n)
+
+
+
 
