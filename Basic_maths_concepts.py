@@ -60,5 +60,82 @@
 # else:
 #     print(False)
 
+
+# armstrong numbers
+
+# def armstrong_number(n):
+#     check_number=0
+#     while(n>0):
+#         lastdigit=n%10
+#         new_lastdigit=(lastdigit)**3
+#         check_number=check_number+new_lastdigit
+#         n=n//10
+#     return check_number
+
+# n= int(input())
+# result=armstrong_number(n)
+# if(result==n):
+#     print(True)
+# else:
+#     print(False)
+
+
+# print all divisors
+
+# def divisors(n):
+#     for i in range(1,n+1):
+#         if(n%i==0):
+#             print(i,end=" ")
+# n=int(input())
+# divisors(n)                       # Time complexity=O(n)
+
+
+
+# so here is the another way to solve same problem with minimum time complexity
+
+# from math import sqrt
+# def divisors(n):
+#     l=[]
+#     num=int(sqrt(n))
+#     for i in range(1,num+1):
+#         if(n%i==0):
+#             l.append(i)
+#             if((n//i)!=i):
+#                 l.append(n//i)
+#         l.sort()
+#     return l
+# n=int(input())
+# print(divisors(n))        # Time complexity=O(sqrt(n))
+
+
+
+# prime number
+# from math import sqrt
+# def prime_number(n):
+#     l=[]
+#     num=int(sqrt(n))
+#     for i in range(1,num+1):
+#         if(n%i==0):
+#             l.append(i)
+#             if((n//i)!=i):
+#                 l.append(n//i)
+#         l.sort()
+#     return l
+# n=int(input())
+# result=prime_number(n)
+# if(len(result)==2):
+#     print("prime")
+# else:
+#     print("not prime")
+
+
+    
+
+
+
+        
+
+
+
     
   
