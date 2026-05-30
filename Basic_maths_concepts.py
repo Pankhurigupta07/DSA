@@ -129,13 +129,64 @@
 #     print("not prime")
 
 
+
+# GCD/HCF
+# from math import sqrt
+# def HCF(n,m):
+#     HCF=[]
+#     list1=[]
+#     list2=[]
+#     new_n=int(sqrt(n))
+#     new_m=int(sqrt(m))
+#     for i in range(1,new_n+1):
+#         if(n%i==0):
+#             list1.append(i)
+#             if((n//i)!=i):
+#                 list1.append(n//i)
+#     for j in range (1,new_m+1):
+#         if(m%j==0):
+#             list2.append(j)
+#             if((m//j)!=j):
+#                 list2.append(m//j)
     
+#     for i in list1:
+#         for j in list2:
+#             if(i==j):
+#                 HCF.append(i) 
+#     return max(HCF)
+
+# n=int(input())
+# m=int(input())
+# print(HCF(n,m))
 
 
+# another way to solve same question       
+# from math import sqrt
+# def HCF(n,m):
+#     minimum=min(n,m)
+#     for i in range(minimum,0,-1):
+#         if (n%i==0 and m%i==0):
+#             print(i)
+#             break
 
-        
+# n=int(input())
+# m=int(input())
+# HCF(n,m)
 
 
+# by using equiledian alogrithm
 
+# def HCF(a,b):
+#     while(a>0 and b>0):
+#         if(a>b):
+#             a=a%b
+#         else:
+#             b=b%a
     
-  
+#     if(a==0):
+#         return b
+#     else:
+#         return a
+# a=int(input())
+# b=int(input())
+# print(HCF(a,b))
