@@ -141,3 +141,21 @@
 # reverse_array(i,n,arr)
 # print(arr)
 
+
+
+# string is palindrome
+
+# def palindrome(i,n,string):
+#     if(i>=n//2):
+#         return True
+
+#     if string[i]!=string[n-i-1]:
+#         return False
+#     return palindrome(i+1,n,string)
+    
+# string=input()
+# i=0
+# n=len(string)
+# print(palindrome(i,n,string))
+
+
