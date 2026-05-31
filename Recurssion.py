@@ -35,3 +35,30 @@
 
 # n=int(input())
 # print_number(n,1)
+
+
+# print 1 to n using recursion with backtracking
+
+# def print_number(i,n):
+#     if (i<1):
+#         return
+    
+#     print_number(i-1,n)
+#     print(i)
+
+# n=int(input())
+# print_number(n,n)
+
+
+# print n to 1 using recursion with backtracking
+
+# def print_number(i,n):
+#     if(i>n):
+#         return
+#     print_number(i+1,n)
+#     print(i)
+
+# n=int(input())
+# print_number(1,n)
+
+
