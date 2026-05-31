@@ -61,4 +61,83 @@
 # n=int(input())
 # print_number(1,n)
 
+# sum of n numbers 
+
+# def sum_n_numbers(i,n,sum):
+#     if(i>n):
+#         return
+
+#     sum=sum+i
+#     sum_n_numbers(i+1,n,sum)
+#     if(i==n):
+#         print(sum)
+    
+# n=int(input())
+# sum=0
+# sum_n_numbers(1,n,sum)
+
+# another way, parameterize way
+# def sum_n_num(i,sum):
+#     if(i<1):
+#         print(sum)
+#         return
+#     sum_n_num(i-1, sum+i)
+# n=int(input())
+# sum=0
+# sum_n_num(n,sum)
+
+# another way using functional method
+
+# def sum_n_nums(n):
+#     if(n==0):
+#         return 0
+    
+#     return n+sum_n_nums(n-1)
+
+# n=int(input())
+# print(sum_n_nums(n))
+
+
+# factorial 
+
+# def fact(n):
+#     if(n==0):
+#         return 1
+    
+#     return n*fact(n-1)
+
+# n=int(input())
+# print(fact(n))
+
+# reverse the array using 2 pointers
+# def reverse_array(i,j,n):
+#     if(i>=j):
+#         return
+
+#     temp=n[i]
+#     n[i]=n[j]
+#     n[j]=temp
+#     reverse_array(i+1,j-1,n)
+   
+
+# n=list(map(int,input().split()))
+# j=len(n)-1
+# i=0
+
+# reverse_array(i,j,n)
+# print(n)
+
+# reverse the array using one pointer
+
+# def reverse_array(i,n,arr):
+#     if(i>=n//2):
+#         return
+#     arr[i],arr[n-i-1]=arr[n-i-1],arr[i]
+#     reverse_array(i+1,n,arr)
+
+# arr=list(map(int,(input().split())))
+# i=0
+# n=len(arr)
+# reverse_array(i,n,arr)
+# print(arr)
 
