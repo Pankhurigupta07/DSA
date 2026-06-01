@@ -160,13 +160,13 @@
 
 
 # fibonacci series
-def fibonacci_series(n):
-    if(n<=1):
-        return n
+# def fibonacci_series(n):
+#     if(n<=1):
+#         return n
 
-    last=fibonacci_series(n-1)
-    second_last=fibonacci_series(n-2)
-    return last+second_last
+#     last=fibonacci_series(n-1)
+#     second_last=fibonacci_series(n-2)
+#     return last+second_last
 
-n=int(input())
-print(fibonacci_series(n))
+# n=int(input())
+# print(fibonacci_series(n))
