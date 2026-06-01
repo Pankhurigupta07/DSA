@@ -131,14 +131,14 @@
 
 # def reverse_array(i,n,arr):
 #     if(i>=n//2):
-#         return
+#         return arr
 #     arr[i],arr[n-i-1]=arr[n-i-1],arr[i]
-#     reverse_array(i+1,n,arr)
+#     return reverse_array(i+1,n,arr)
 
 # arr=list(map(int,(input().split())))
 # i=0
 # n=len(arr)
-# reverse_array(i,n,arr)
+# print(reverse_array(i,n,arr))
 # print(arr)
 
 
@@ -159,3 +159,14 @@
 # print(palindrome(i,n,string))
 
 
+# fibonacci series
+def fibonacci_series(n):
+    if(n<=1):
+        return n
+
+    last=fibonacci_series(n-1)
+    second_last=fibonacci_series(n-2)
+    return last+second_last
+
+n=int(input())
+print(fibonacci_series(n))
