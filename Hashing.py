@@ -13,14 +13,14 @@ for i in range (arr_size):
 
 # fetching
 q=int(input())
-result=[]
 
+result=[]
 while(q>0):
     number=int(input())
     
-    result.append((hash_arr[number]))
+    result.append(f"{number} : {hash_arr[number]}")
     q-=1
-    
+
 print(result)
 
    
