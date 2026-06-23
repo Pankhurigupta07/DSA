@@ -26,6 +26,8 @@
 
 
 # brute force solution mein sorting karte hai
+# TC-> O(NLogN)
+#SC -> O(1)
 
 # def largest_element(arr):
 #     num=arr[0]
