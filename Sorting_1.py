@@ -46,8 +46,9 @@
 #         j=i
 #         while(j>0 and arr[j-1]>arr[j]):
 #             arr[j-1],arr[j]=arr[j],arr[j-1]
+#             j-=1
+            
 #     return arr
         
-
 # arr=[int(x)for x in input().split()]
 # print(insertion_sort(arr))
