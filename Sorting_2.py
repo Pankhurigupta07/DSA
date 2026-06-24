@@ -40,26 +40,23 @@
 
 
 # recursive bubble sort
-def bubble_sort_rec(arr, n):
+# def bubble_sort_rec(arr, n):
     
-    if n == 1:
-        return
+#     if n == 1:
+#         return
 
-    swapped = False
+#     swapped = False
     
-    for i in range(n - 1):
-        if arr[i] > arr[i + 1]:
-            arr[i], arr[i + 1] = arr[i + 1], arr[i]
-            swapped = True  
-
+#     for i in range(n - 1):
+#         if arr[i] > arr[i + 1]:
+#             arr[i], arr[i + 1] = arr[i + 1], arr[i]
+#             swapped = True  
     
-    if not swapped:
-        return
+#     if not swapped:
+#         return
 
-   
-    bubble_sort_rec(arr, n - 1)
+#     bubble_sort_rec(arr, n - 1)
 
-
-arr = [int(x) for x in input().split()]
-bubble_sort_rec(arr, len(arr))
-print("Sorted Array:", arr)
+# arr = [int(x) for x in input().split()]
+# bubble_sort_rec(arr, len(arr))
+# print("Sorted Array:", arr)
