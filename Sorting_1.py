@@ -16,24 +16,24 @@
 
 # bubble sort
 
-def bubble_sort(arr):
-    n=len(arr)
+# def bubble_sort(arr):
+#     n=len(arr)
     
-    for i in range(n-1,0,-1):
+#     for i in range(n-1,0,-1):
        
-        didswap=0
-        for j in range(i):
-            if(arr[j]>arr[j+1]):
-                arr[j+1],arr[j]=arr[j],arr[j+1]
-                didswap=1
+#         didswap=0
+#         for j in range(i):
+#             if(arr[j]>arr[j+1]):
+#                 arr[j+1],arr[j]=arr[j],arr[j+1]
+#                 didswap=1
         
-        if didswap==0: 
-            break
+#         if didswap==0: 
+#             break
 
-    return arr  
+#     return arr  
 
-arr=[int(x) for x in input().split()]
-print(bubble_sort(arr))
+# arr=[int(x) for x in input().split()]
+# print(bubble_sort(arr))
 
 # worst time complexity= O(n^2)
 # best time complexity=O(n)
