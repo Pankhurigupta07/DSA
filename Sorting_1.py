@@ -52,3 +52,7 @@
         
 # arr=[int(x)for x in input().split()]
 # print(insertion_sort(arr))
+
+# worst time complexity= O(n^2)
+# average time complexity=O(n^2)
+# best case time complexity=O(n)
