@@ -47,3 +47,23 @@
 # print(largest_element(arr))
 
 
+# second largest element in array
+#brute force 
+# time complexity=O(n+nlogn)
+
+def second_largest_element(arr,n):
+    for i in range(n-1):
+        mini=i
+        for j in range(i,n):
+            if(arr[j]<arr[mini]):
+                arr[mini],arr[j]=arr[j],arr[mini]
+    for k in range(n-2,-1,-1):
+        if(arr[k+1]!=arr[k]):
+            second_largest_element=arr[k]
+            break
+
+    return second_largest_element
+
+
+arr=[int(x) for x in input().split()]
+print(second_largest_element(arr,len(arr)))
