@@ -87,3 +87,43 @@
 
 # arr=[int(x) for x in input().split()]
 # print(second_largest_element(arr,len(arr)))
+
+
+# optimal solution
+
+def second_largest_element(arr,n):
+    # if n<2:
+    #     return-1
+    largest=arr[0]
+    second_largest=-1
+    for i in range(1,n):
+        if(arr[i]>largest):
+            second_largest=largest
+            largest=arr[i]
+
+        elif arr[i] >second_largest and arr[i]!=largest :
+            second_largest=arr[i]
+
+    return second_largest
+
+def second_smallest_element(arr,n):
+    # if n<2:
+    #     return-1
+    smallest=arr[0]
+    second_smallest=float('inf')
+    for i in range(1,n):
+        if(arr[i]<smallest):
+            second_smallest=smallest
+            smallest=arr[i]
+
+        elif arr[i]<second_smallest and arr[i]!=smallest :
+            second_smallest=arr[i]
+
+    return second_smallest
+
+arr=[int(x) for x in input().split()]
+print("second largest:",second_largest_element(arr,len(arr)))
+print("second smallest:",second_smallest_element(arr,len(arr)))
+
+
+
