@@ -67,3 +67,23 @@
 
 # arr=[int(x) for x in input().split()]
 # print(second_largest_element(arr,len(arr)))
+
+
+# better approch
+# O(2n) time complexity
+
+def second_largest_element(arr,n):
+    largest=arr[0]
+    for i in range(n):
+        if(arr[i]>largest):
+            largest=arr[i]
+
+    second_largest=-1
+    for j in range(n):
+        if(arr[j]>second_largest and arr[j]!=largest):
+            second_largest=arr[j]
+
+    return second_largest
+
+arr=[int(x) for x in input().split()]
+print(second_largest_element(arr,len(arr)))
