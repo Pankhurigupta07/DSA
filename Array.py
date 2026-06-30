@@ -126,7 +126,7 @@
 
 # arr=[int(x) for x in input().split()]
 # print("second largest:",second_largest_element(arr,len(arr)))
-# print("second smallest:",second_smallest_element(arr,len(arr)))
+print("second smallest:",second_smallest_element(arr,len(arr)))
 
 
 
