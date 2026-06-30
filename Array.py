@@ -108,7 +108,7 @@
 #     return second_largest
 
 # second smallest
-# tc->O(n)
+tc->O(n)
 # def second_smallest_element(arr,n):
 #     # if n<2:
 #     #     return-1
