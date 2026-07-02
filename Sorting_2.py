@@ -39,7 +39,7 @@
 #space complexity=O(n)
 
 
-# recursive bubble sort
+recursive bubble sort
 # def bubble_sort_rec(arr, n):
     
 #     if n == 1:
