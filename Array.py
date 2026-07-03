@@ -210,16 +210,53 @@
 # left rotate an array by "D" places
 # brute force
 
-def left_rotate_by_D(arr,n,d):
-    temp=arr[:d]
-    for i in range(d,n):
-        arr[i-d]=arr[i]
-        k=0
-    for j in range(n-d,n):
-        arr[j]=temp[k]
-        k+=1
-    return arr
+# better approach
 
-arr=[int(x) for x in input().split()]
-d=int(input())
-print(left_rotate_by_D(arr,len(arr),d))
+# def left_rotate_by_D(arr,n,d):
+#     d=d%n
+#     temp=[]
+#     for i in range(d):
+#         temp.append(arr[i])
+
+#     for i in range(d,n):
+#         arr[i-d]=arr[i]
+        
+#     for j in range(n-d,n):
+#         arr[j]=temp[j-(n-d)]
+#     return arr
+
+# arr=[int(x) for x in input().split()]
+# d=int(input())
+# print(left_rotate_by_D(arr,len(arr),d))
+
+# space complexity =O(d)
+# time complexity=O(d)+O(n-d)+O(d)==O(n+d)
+
+# optimal approach
+
+# def left_rotate_by_D(arr,n,d):
+#     d=d%n
+#     arr[0:d]=list(reversed(arr[0:d]))
+#     arr[d:n]=list(reversed(arr[d:n]))
+#     arr[0:n]=list(reversed(arr[0:n]))
+#     return arr
+
+# arr=[int(x) for x in input().split()]
+# d=int(input())
+# print(left_rotate_by_D(arr,len(arr),d))
+
+
+# def left_rotate_by_D(arr, n, d):
+#     d = d % n
+    
+#     arr[0:d] = arr[0:d][::-1]
+#     arr[d:n] = arr[d:n][::-1]
+#     arr[0:n] = arr[0:n][::-1]
+    
+#     return arr
+
+# arr=[int(x) for x in input().split()]
+# d=int(input())
+# print(left_rotate_by_D(arr,len(arr),d))
+
+
