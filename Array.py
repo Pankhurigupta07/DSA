@@ -191,3 +191,18 @@
 #     return arr[:i+1]
 # arr=[int(x) for x in input().split()]
 # print(remove_duplicates_from_sorted_array(arr,len(arr)))
+
+# left rotate an array by one place 
+# time complexity=O(N)
+# space required to implement this algorithm is O(N)
+# extra space->O(1)
+
+def left_rotate(arr,n):
+    temp=arr[0]
+    for i in range(1,n):
+        arr[i-1]=arr[i]
+    arr[n-1]=temp
+    return arr
+    
+arr=[int(x) for x in input().split()]
+print(left_rotate(arr,len(arr)))
