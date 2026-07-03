@@ -136,7 +136,7 @@ def array_is_sorted(arr,n):
         check=0
         if(arr[i]>=arr[i-1]):
             check=1
-            
+
         else:
             return False
 
@@ -145,4 +145,4 @@ def array_is_sorted(arr,n):
 arr=[int(x) for x in input().split()]
 print(array_is_sorted(arr,len(arr)))
 
-
+# time complexity=O(n)
