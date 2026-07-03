@@ -163,7 +163,8 @@
         
 # arr=[int(x) for x in input().split()]
 # print(remove_duplicates_from_sorted_array(arr,len(arr)))
-# time complexity=O(n)
+# time complexity=O(n+n(log)n)
+# sc->O(n)
 
 # brute force
 
