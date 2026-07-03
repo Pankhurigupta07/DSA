@@ -129,4 +129,20 @@
 # print("second smallest:",second_smallest_element(arr,len(arr)))
 
 
+# check if the array is sorted
+
+def array_is_sorted(arr,n):
+    for i in range(1,n):
+        check=0
+        if(arr[i]>=arr[i-1]):
+            check=1
+            
+        else:
+            return False
+
+    return True
+
+arr=[int(x) for x in input().split()]
+print(array_is_sorted(arr,len(arr)))
+
 
