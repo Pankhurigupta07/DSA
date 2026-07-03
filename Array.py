@@ -154,7 +154,12 @@
 #     for i in range(n):
 #         empty_set.add(arr[i])
 
-#     return empty_set
+#     index=0
+#     for element in empty_set:
+#         arr[index]=element
+#         index+=1
+
+#     return arr[:index]
         
 # arr=[int(x) for x in input().split()]
 # print(remove_duplicates_from_sorted_array(arr,len(arr)))
