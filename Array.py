@@ -158,15 +158,16 @@
         
 # arr=[int(x) for x in input().split()]
 # print(remove_duplicates_from_sorted_array(arr,len(arr)))
+# time complexity=O(n)
 
 # brute force
 
-def remove_duplicates_from_sorted_array(arr):
+# def remove_duplicates_from_sorted_array(arr):
     
-    remove_duplicate=set(arr)
-    return remove_duplicate
+#     remove_duplicate=set(arr)
+#     return remove_duplicate
         
-arr=[int(x) for x in input().split()]
-print(remove_duplicates_from_sorted_array(arr))
+# arr=[int(x) for x in input().split()]
+# print(remove_duplicates_from_sorted_array(arr))
 
 
