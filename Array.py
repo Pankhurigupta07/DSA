@@ -181,13 +181,13 @@
 # time complexity=O(n)
 # space complexity=O(1)
 
-def remove_duplicates_from_sorted_array(arr,n):
+# def remove_duplicates_from_sorted_array(arr,n):
 
-    i=0
-    for j in range(1,n):
-        if(arr[j]!=arr[i]):
-            arr[i+1]=arr[j]
-            i+=1
-    return arr[:i+1]
-arr=[int(x) for x in input().split()]
-print(remove_duplicates_from_sorted_array(arr,len(arr)))
+#     i=0
+#     for j in range(1,n):
+#         if(arr[j]!=arr[i]):
+#             arr[i+1]=arr[j]
+#             i+=1
+#     return arr[:i+1]
+# arr=[int(x) for x in input().split()]
+# print(remove_duplicates_from_sorted_array(arr,len(arr)))
