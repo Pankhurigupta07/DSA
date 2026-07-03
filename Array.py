@@ -144,5 +144,29 @@
 
 # arr=[int(x) for x in input().split()]
 # print(array_is_sorted(arr,len(arr)))
-
 # time complexity=O(n)
+
+# remove duplicates in place from sorted array
+
+# brute force
+# def remove_duplicates_from_sorted_array(arr,n):
+#     empty_set=set()
+#     for i in range(n):
+#         empty_set.add(arr[i])
+
+#     return empty_set
+        
+# arr=[int(x) for x in input().split()]
+# print(remove_duplicates_from_sorted_array(arr,len(arr)))
+
+# brute force
+
+def remove_duplicates_from_sorted_array(arr):
+    
+    remove_duplicate=set(arr)
+    return remove_duplicate
+        
+arr=[int(x) for x in input().split()]
+print(remove_duplicates_from_sorted_array(arr))
+
+
