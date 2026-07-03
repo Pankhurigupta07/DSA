@@ -197,12 +197,29 @@
 # space required to implement this algorithm is O(N)
 # extra space->O(1)
 
-def left_rotate(arr,n):
-    temp=arr[0]
-    for i in range(1,n):
-        arr[i-1]=arr[i]
-    arr[n-1]=temp
+# def left_rotate(arr,n):
+#     temp=arr[0]
+#     for i in range(1,n):
+#         arr[i-1]=arr[i]
+#     arr[n-1]=temp
+#     return arr
+
+# arr=[int(x) for x in input().split()]
+# print(left_rotate(arr,len(arr)))
+
+# left rotate an array by "D" places
+# brute force
+
+def left_rotate_by_D(arr,n,d):
+    temp=arr[:d]
+    for i in range(d,n):
+        arr[i-d]=arr[i]
+        k=0
+    for j in range(n-d,n):
+        arr[j]=temp[k]
+        k+=1
     return arr
-    
+
 arr=[int(x) for x in input().split()]
-print(left_rotate(arr,len(arr)))
+d=int(input())
+print(left_rotate_by_D(arr,len(arr),d))
